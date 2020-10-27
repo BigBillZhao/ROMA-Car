@@ -1,0 +1,2 @@
+dynamixel_sdk:dynamixel_workbench:dynamixel_workbench_controllers:dynamixel_workbench_msgs:dynamixel_workbench_operators:dynamixel_workbench_toolbox:servo_test
+-DCATKIN_DEVEL_PREFIX=/home/romacar/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/romacar/catkin_ws/install -G Unix Makefiles
