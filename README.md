@@ -1,8 +1,8 @@
 # ROMACAR
 
-This repostiry store the control code of a high frequent force control, individual four wheel drive test car.  
+This repository stores the control code of a high-frequency-force-controllable, four-individually-drivern-wheel prototype car.  
 
-The project will make a validation 1:8 car first, then a breefer 1:5 car.
+The project will make a validation 1:8 car first, then a beefier 1:5 one.
 
 ## 1:8 car
 
