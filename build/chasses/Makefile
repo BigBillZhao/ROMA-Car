@@ -68,26 +68,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target test
 test:
@@ -100,17 +91,26 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -167,6 +167,48 @@ depend:
 	cd /home/romacar/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+chasses/CMakeFiles/sketch.dir/rule:
+	cd /home/romacar/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chasses/CMakeFiles/sketch.dir/rule
+.PHONY : chasses/CMakeFiles/sketch.dir/rule
+
+# Convenience name for target.
+sketch: chasses/CMakeFiles/sketch.dir/rule
+
+.PHONY : sketch
+
+# fast build rule for target.
+sketch/fast:
+	cd /home/romacar/catkin_ws/build && $(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/build
+.PHONY : sketch/fast
+
+src/sketch.o: src/sketch.cpp.o
+
+.PHONY : src/sketch.o
+
+# target to build an object file
+src/sketch.cpp.o:
+	cd /home/romacar/catkin_ws/build && $(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/src/sketch.cpp.o
+.PHONY : src/sketch.cpp.o
+
+src/sketch.i: src/sketch.cpp.i
+
+.PHONY : src/sketch.i
+
+# target to preprocess a source file
+src/sketch.cpp.i:
+	cd /home/romacar/catkin_ws/build && $(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/src/sketch.cpp.i
+.PHONY : src/sketch.cpp.i
+
+src/sketch.s: src/sketch.cpp.s
+
+.PHONY : src/sketch.s
+
+# target to generate assembly for a file
+src/sketch.cpp.s:
+	cd /home/romacar/catkin_ws/build && $(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/src/sketch.cpp.s
+.PHONY : src/sketch.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,12 +216,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... edit_cache"
-	@echo "... list_install_components"
-	@echo "... test"
 	@echo "... install/local"
+	@echo "... test"
+	@echo "... sketch"
+	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... src/sketch.o"
+	@echo "... src/sketch.i"
+	@echo "... src/sketch.s"
 .PHONY : help
 
 

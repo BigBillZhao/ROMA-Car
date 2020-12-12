@@ -909,6 +909,19 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named sketch
+
+# Build rule for target.
+sketch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sketch
+.PHONY : sketch
+
+# fast build rule for target.
+sketch/fast:
+	$(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/build
+.PHONY : sketch/fast
+
+#=============================================================================
 # Target rules for targets named dynamixel_workbench_toolbox
 
 # Build rule for target.
@@ -933,6 +946,19 @@ kb_pub_node: cmake_check_build_system
 kb_pub_node/fast:
 	$(MAKE) -f kb_pub/CMakeFiles/kb_pub_node.dir/build.make kb_pub/CMakeFiles/kb_pub_node.dir/build
 .PHONY : kb_pub_node/fast
+
+#=============================================================================
+# Target rules for targets named motor_test_node
+
+# Build rule for target.
+motor_test_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_test_node
+.PHONY : motor_test_node
+
+# fast build rule for target.
+motor_test_node/fast:
+	$(MAKE) -f motor_test/CMakeFiles/motor_test_node.dir/build.make motor_test/CMakeFiles/motor_test_node.dir/build
+.PHONY : motor_test_node/fast
 
 #=============================================================================
 # Target rules for targets named servo_node
@@ -1342,8 +1368,10 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... sketch"
 	@echo "... dynamixel_workbench_toolbox"
 	@echo "... kb_pub_node"
+	@echo "... motor_test_node"
 	@echo "... servo_node"
 	@echo "... sync_read_write"
 	@echo "... find_dynamixel"

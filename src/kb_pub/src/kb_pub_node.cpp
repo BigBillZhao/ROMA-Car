@@ -3,6 +3,7 @@
 
 #include <sstream>
 #include <iostream>
+#include <string>
 
 /**
  * This tutorial demonstrates simple sending of messages over the ROS system.
@@ -53,6 +54,8 @@ int main(int argc, char **argv)
    * A count of how many messages we have sent. This is used to create
    * a unique string for each message.
    */
+  int spd = 0;
+  int step = 8;
   while (ros::ok())
   {
     /**
@@ -61,8 +64,12 @@ int main(int argc, char **argv)
     std_msgs::String msg;
 
     std::string input_msg;
-    std::cout << "Please input position" << std::endl;
-    std::cin >> input_msg;
+    // std::cout << "Please input position" << std::endl;
+    // std::cin >> input_msg;
+    spd += step;
+    if(spd == 400 || spd == 0)
+      step = -step;
+    input_msg = std::to_string(spd);
 
     std::stringstream ss;
     ss << input_msg;

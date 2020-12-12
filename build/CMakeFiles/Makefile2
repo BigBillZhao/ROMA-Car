@@ -264,12 +264,12 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=88,89,90 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=86,87 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=86,87 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=84,85 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=92,93 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=90 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,12 +379,12 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=91 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=88,89 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
@@ -807,7 +807,7 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_geneus.dir/all: dyn
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_geneus.dir/rule
@@ -1296,7 +1296,7 @@ all: dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messa
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 70
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages.dir/rule
@@ -1407,12 +1407,12 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_c
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/all: dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MXExt.dir/all
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target dynamixel_workbench_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target dynamixel_workbench_msgs_generate_messages_cpp"
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_cpp.dir/rule
@@ -1444,7 +1444,7 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gencpp.dir/all: dyn
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gencpp.dir/rule
@@ -1523,12 +1523,12 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_e
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/all: dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MXExt.dir/all
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target dynamixel_workbench_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target dynamixel_workbench_msgs_generate_messages_eus"
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_eus.dir/rule
@@ -1607,7 +1607,7 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_l
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/all: dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MXExt.dir/all
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target dynamixel_workbench_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target dynamixel_workbench_msgs_generate_messages_lisp"
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1659,12 +1659,12 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_n
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/all: dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MXExt.dir/all
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60,61,62,63,64,65 "Built target dynamixel_workbench_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target dynamixel_workbench_msgs_generate_messages_nodejs"
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_nodejs.dir/rule
@@ -1696,7 +1696,7 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gennodejs.dir/all: 
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_gennodejs.dir/rule
@@ -1743,7 +1743,7 @@ dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_p
 dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/all: dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MXExt.dir/all
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/build.make dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target dynamixel_workbench_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74,75,76,77,78 "Built target dynamixel_workbench_msgs_generate_messages_py"
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/dynamixel_workbench_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2171,12 +2171,12 @@ clean: dynamixel_sdk/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 # Directory level rules for directory chasses
 
 # Convenience name for "all" pass in the directory.
-chasses/all:
+chasses/all: chasses/CMakeFiles/sketch.dir/all
 
 .PHONY : chasses/all
 
 # Convenience name for "clean" pass in the directory.
-chasses/clean:
+chasses/clean: chasses/CMakeFiles/sketch.dir/clean
 
 .PHONY : chasses/clean
 
@@ -2184,6 +2184,43 @@ chasses/clean:
 chasses/preinstall:
 
 .PHONY : chasses/preinstall
+
+#=============================================================================
+# Target rules for target chasses/CMakeFiles/sketch.dir
+
+# All Build rule for target.
+chasses/CMakeFiles/sketch.dir/all: dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/all
+	$(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/depend
+	$(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=96,97 "Built target sketch"
+.PHONY : chasses/CMakeFiles/sketch.dir/all
+
+# Include target in all.
+all: chasses/CMakeFiles/sketch.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+chasses/CMakeFiles/sketch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 chasses/CMakeFiles/sketch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
+.PHONY : chasses/CMakeFiles/sketch.dir/rule
+
+# Convenience name for target.
+sketch: chasses/CMakeFiles/sketch.dir/rule
+
+.PHONY : sketch
+
+# clean rule for target.
+chasses/CMakeFiles/sketch.dir/clean:
+	$(MAKE) -f chasses/CMakeFiles/sketch.dir/build.make chasses/CMakeFiles/sketch.dir/clean
+.PHONY : chasses/CMakeFiles/sketch.dir/clean
+
+# clean rule for target.
+clean: chasses/CMakeFiles/sketch.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory dynamixel_workbench_toolbox
@@ -2225,7 +2262,7 @@ dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/all: dyna
 dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/all: dynamixel_sdk/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/build.make dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/depend
 	$(MAKE) -f dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/build.make dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=81,82,83,84 "Built target dynamixel_workbench_toolbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=79,80,81 "Built target dynamixel_workbench_toolbox"
 .PHONY : dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/all
 
 # Include target in all.
@@ -2235,7 +2272,7 @@ all: dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/rule
@@ -2280,7 +2317,7 @@ kb_pub/preinstall:
 kb_pub/CMakeFiles/kb_pub_node.dir/all:
 	$(MAKE) -f kb_pub/CMakeFiles/kb_pub_node.dir/build.make kb_pub/CMakeFiles/kb_pub_node.dir/depend
 	$(MAKE) -f kb_pub/CMakeFiles/kb_pub_node.dir/build.make kb_pub/CMakeFiles/kb_pub_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=95 "Built target kb_pub_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=92,93 "Built target kb_pub_node"
 .PHONY : kb_pub/CMakeFiles/kb_pub_node.dir/all
 
 # Include target in all.
@@ -2290,7 +2327,7 @@ all: kb_pub/CMakeFiles/kb_pub_node.dir/all
 
 # Build rule for subdir invocation for target.
 kb_pub/CMakeFiles/kb_pub_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 kb_pub/CMakeFiles/kb_pub_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : kb_pub/CMakeFiles/kb_pub_node.dir/rule
@@ -2314,12 +2351,12 @@ clean: kb_pub/CMakeFiles/kb_pub_node.dir/clean
 # Directory level rules for directory motor_test
 
 # Convenience name for "all" pass in the directory.
-motor_test/all:
+motor_test/all: motor_test/CMakeFiles/motor_test_node.dir/all
 
 .PHONY : motor_test/all
 
 # Convenience name for "clean" pass in the directory.
-motor_test/clean:
+motor_test/clean: motor_test/CMakeFiles/motor_test_node.dir/clean
 
 .PHONY : motor_test/clean
 
@@ -2327,6 +2364,43 @@ motor_test/clean:
 motor_test/preinstall:
 
 .PHONY : motor_test/preinstall
+
+#=============================================================================
+# Target rules for target motor_test/CMakeFiles/motor_test_node.dir
+
+# All Build rule for target.
+motor_test/CMakeFiles/motor_test_node.dir/all:
+	$(MAKE) -f motor_test/CMakeFiles/motor_test_node.dir/build.make motor_test/CMakeFiles/motor_test_node.dir/depend
+	$(MAKE) -f motor_test/CMakeFiles/motor_test_node.dir/build.make motor_test/CMakeFiles/motor_test_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=94 "Built target motor_test_node"
+.PHONY : motor_test/CMakeFiles/motor_test_node.dir/all
+
+# Include target in all.
+all: motor_test/CMakeFiles/motor_test_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motor_test/CMakeFiles/motor_test_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 motor_test/CMakeFiles/motor_test_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
+.PHONY : motor_test/CMakeFiles/motor_test_node.dir/rule
+
+# Convenience name for target.
+motor_test_node: motor_test/CMakeFiles/motor_test_node.dir/rule
+
+.PHONY : motor_test_node
+
+# clean rule for target.
+motor_test/CMakeFiles/motor_test_node.dir/clean:
+	$(MAKE) -f motor_test/CMakeFiles/motor_test_node.dir/build.make motor_test/CMakeFiles/motor_test_node.dir/clean
+.PHONY : motor_test/CMakeFiles/motor_test_node.dir/clean
+
+# clean rule for target.
+clean: motor_test/CMakeFiles/motor_test_node.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory servo
@@ -2353,7 +2427,7 @@ servo/preinstall:
 servo/CMakeFiles/servo_node.dir/all: dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/all
 	$(MAKE) -f servo/CMakeFiles/servo_node.dir/build.make servo/CMakeFiles/servo_node.dir/depend
 	$(MAKE) -f servo/CMakeFiles/servo_node.dir/build.make servo/CMakeFiles/servo_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=96,97 "Built target servo_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=95 "Built target servo_node"
 .PHONY : servo/CMakeFiles/servo_node.dir/all
 
 # Include target in all.
@@ -2363,7 +2437,7 @@ all: servo/CMakeFiles/servo_node.dir/all
 
 # Build rule for subdir invocation for target.
 servo/CMakeFiles/servo_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 servo/CMakeFiles/servo_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : servo/CMakeFiles/servo_node.dir/rule
@@ -2516,7 +2590,7 @@ dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/all: dynamixel_wor
 dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/all: dynamixel_workbench_controllers/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
 	$(MAKE) -f dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/build.make dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/depend
 	$(MAKE) -f dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/build.make dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=85 "Built target find_dynamixel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=82,83 "Built target find_dynamixel"
 .PHONY : dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/all
 
 # Include target in all.
@@ -2526,7 +2600,7 @@ all: dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/all
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 82
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 81
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_controllers/CMakeFiles/find_dynamixel.dir/rule
@@ -3069,7 +3143,7 @@ dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/a
 dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/all: dynamixel_workbench_controllers/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
 	$(MAKE) -f dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/build.make dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/depend
 	$(MAKE) -f dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/build.make dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=7,8,9 "Built target dynamixel_workbench_controllers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target dynamixel_workbench_controllers"
 .PHONY : dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/all
 
 # Include target in all.
@@ -3079,7 +3153,7 @@ all: dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.
 
 # Build rule for subdir invocation for target.
 dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 84
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 81
 	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romacar/catkin_ws/build/CMakeFiles 0
 .PHONY : dynamixel_workbench_controllers/CMakeFiles/dynamixel_workbench_controllers.dir/rule
@@ -3396,7 +3470,7 @@ dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/all: dynamixel_workb
 dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/all: dynamixel_workbench_operators/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
 	$(MAKE) -f dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/build.make dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/depend
 	$(MAKE) -f dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/build.make dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=94 "Built target joint_operator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/romacar/catkin_ws/build/CMakeFiles --progress-num=91 "Built target joint_operator"
 .PHONY : dynamixel_workbench_operators/CMakeFiles/joint_operator.dir/all
 
 # Include target in all.

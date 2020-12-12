@@ -1,0 +1,187 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <thread>
+
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+
+#include <net/if.h>
+#include <sys/ioctl.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+
+#include <linux/can.h>
+#include <linux/can/raw.h>
+
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+
+#define Kp_speed 2.6
+#define Ki_speed 0.8
+#define Kd_speed 0.8
+#define Kp_T 1.50
+#define Ki_T 0.40
+#define Kd_T 0.10
+#define RpmIntegralSaturation 600 // highly influence the wave
+
+#define CAN1 0x200
+#define CAN2 0x1FF
+
+#define Tx_C610_2_High 2
+#define Tx_C610_2_Low 3
+#define MaxCurrent 10000
+#define MinCurrent -10000
+
+// Rx data frame
+#define Rx_C610_2 0x202
+#define Angle_High 0
+#define Angle_Low 1
+#define Omega_High 2
+#define Omega_Low 3
+#define Current_High 4
+#define Current_Low 5
+
+typedef struct
+{
+    // last_time for error
+    int16_t rpm_last_time;
+    int16_t rpm_now;
+    int integral_rpm;
+
+    int16_t current_last_time;
+    int16_t current_now;
+
+    int16_t angle_last_time;
+    int16_t angle_now;
+    int integral_angle;
+} Motor_Control_Info;
+
+struct can_frame rxframe;
+struct can_frame txframe;
+
+Motor_Control_Info Motor_info = {0, 0, 0, 0, 0, 0, 0, 0};
+
+void rxProcess(const struct can_frame *raw, Motor_Control_Info *processed_data)
+{
+  processed_data->angle_now = (uint16_t)(raw->data[0] << 8 | raw->data[1]);
+  processed_data->rpm_now = (uint16_t)(raw->data[2] << 8 | raw->data[3]);
+  processed_data->current_now = (uint16_t)(raw->data[4] << 8 | raw->data[5]);
+  printf("omega:%d torque:%d ",
+         processed_data->rpm_now, processed_data->current_now);
+}
+
+// speed loop PID, calculate current needed
+int16_t CurrentToSend(int desired_rpm, Motor_Control_Info *info)
+{
+  // out-loop for rpm
+  int delta_rpm = desired_rpm - info->rpm_now;    // Kp
+  int diff_rpm = delta_rpm - info->rpm_last_time; //Kd
+  info->integral_rpm += abs(info->integral_rpm + delta_rpm) < RpmIntegralSaturation ? delta_rpm : 0;
+  int desired_current = (Kp_speed * delta_rpm + Ki_speed * info->integral_rpm + Kd_speed * diff_rpm);
+
+  // update error last time
+  info->rpm_last_time = delta_rpm;
+
+  if (desired_current > 10000)
+    return (int16_t)10000;
+  else if (desired_current < -10000)
+    return (int16_t)-10000;
+  else
+    return (int16_t)desired_current;
+}
+
+
+int s;
+int nbytes;
+struct sockaddr_can addr;
+struct ifreq ifr;
+socklen_t len = sizeof(addr); // for recvfrom
+const char *ifname = "can0";
+int count = 0;
+int16_t Current_sent = 0;
+
+void chatterCallback(const std_msgs::String::ConstPtr& msg)
+{
+  ROS_INFO("I heard: [%s]", msg->data.c_str());
+  int speed = stoi(msg->data);
+//   while(1)
+//   {
+    printf("no.%d ", count);
+    count++;
+    nbytes = read(s, &rxframe, sizeof(struct can_frame));
+    if (nbytes < 0)
+    {
+      perror("Read");
+    //   break;
+    }
+
+    rxProcess(&rxframe, &Motor_info);
+
+    Current_sent = CurrentToSend(speed, &Motor_info);
+
+    txframe.data[Tx_C610_2_High] = Current_sent >> 8; // done: negative with type convertion
+    txframe.data[Tx_C610_2_Low] = Current_sent & 255;
+    nbytes = write(s, &txframe, sizeof(struct can_frame));
+
+    if (nbytes < 0)
+    {
+      perror("Write");
+    //   break;
+    }
+//   }
+}
+
+int main(int argc, char **argv)
+{
+
+  /* set up can network in ubuntu */   
+  const char* set_bitrate = "sudo ip link set can0 type can bitrate 1000000";
+  const char* set_up = "sudo ip link set up can0";
+  if(system(set_bitrate)||system(set_up))
+    printf("set up network fail");
+
+  /* open the socket */
+  if ((s = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0)
+  {
+    perror("Error while opening socket");
+    return -1;
+  }
+
+  /* get interface name from the received CAN frame */
+  strcpy(ifr.ifr_name, ifname);
+  ioctl(s, SIOCGIFINDEX, &ifr);
+
+  addr.can_family = AF_CAN;
+  addr.can_ifindex = ifr.ifr_ifindex;
+
+  /* bind socket to the can interface */
+  if (bind(s, (struct sockaddr *)&addr, len) < 0)
+  {
+    perror("Error in socket bind!!!");
+    return -2;
+  }
+
+  std::ofstream fout; 
+  fout.open("/home/romacar/4-Wheel-car/test_data/20201021.csv", std::ios::out|std::ios::app); 
+  fout<<"count,rpm_now,current_now,current_sent,error_integral\n";
+
+  /* configure CAN info and fresh the data */
+  txframe.can_id = CAN1;
+  txframe.can_dlc = 8;
+  for (int i = 0; i < 8; i++)
+    txframe.data[i] = 0;
+  nbytes = write(s, &txframe, sizeof(struct can_frame));
+
+  ros::init(argc, argv, "listener");
+  ros::NodeHandle n;
+  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
+  ros::spin();
+
+  const char* set_down = "sudo ip link set down can0";
+  system(set_down);
+  return 0;
+}
