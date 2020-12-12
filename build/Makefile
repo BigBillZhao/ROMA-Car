@@ -922,17 +922,30 @@ dynamixel_workbench_toolbox/fast:
 .PHONY : dynamixel_workbench_toolbox/fast
 
 #=============================================================================
-# Target rules for targets named motor_test
+# Target rules for targets named kb_pub_node
 
 # Build rule for target.
-motor_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 motor_test
-.PHONY : motor_test
+kb_pub_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kb_pub_node
+.PHONY : kb_pub_node
 
 # fast build rule for target.
-motor_test/fast:
-	$(MAKE) -f motor_test/CMakeFiles/motor_test.dir/build.make motor_test/CMakeFiles/motor_test.dir/build
-.PHONY : motor_test/fast
+kb_pub_node/fast:
+	$(MAKE) -f kb_pub/CMakeFiles/kb_pub_node.dir/build.make kb_pub/CMakeFiles/kb_pub_node.dir/build
+.PHONY : kb_pub_node/fast
+
+#=============================================================================
+# Target rules for targets named servo_node
+
+# Build rule for target.
+servo_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 servo_node
+.PHONY : servo_node
+
+# fast build rule for target.
+servo_node/fast:
+	$(MAKE) -f servo/CMakeFiles/servo_node.dir/build.make servo/CMakeFiles/servo_node.dir/build
+.PHONY : servo_node/fast
 
 #=============================================================================
 # Target rules for targets named sync_read_write
@@ -1330,7 +1343,8 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... dynamixel_workbench_toolbox"
-	@echo "... motor_test"
+	@echo "... kb_pub_node"
+	@echo "... servo_node"
 	@echo "... sync_read_write"
 	@echo "... find_dynamixel"
 	@echo "... geometry_msgs_generate_messages_lisp"

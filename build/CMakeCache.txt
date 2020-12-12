@@ -446,6 +446,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Value Computed by CMake
+kb_pub_BINARY_DIR:STATIC=/home/romacar/catkin_ws/build/kb_pub
+
+//Value Computed by CMake
+kb_pub_SOURCE_DIR:STATIC=/home/romacar/catkin_ws/src/kb_pub
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
@@ -490,6 +496,12 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+servo_BINARY_DIR:STATIC=/home/romacar/catkin_ws/build/servo
+
+//Value Computed by CMake
+servo_SOURCE_DIR:STATIC=/home/romacar/catkin_ws/src/servo
 
 //Value Computed by CMake
 servo_test_BINARY_DIR:STATIC=/home/romacar/catkin_ws/build/servo_test
@@ -619,7 +631,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
