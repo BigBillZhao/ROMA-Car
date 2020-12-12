@@ -76,7 +76,7 @@ void canRx(const struct can_frame *raw, Motor_Control_Info *processed_data, int 
   if (nbytes < 0)
   {
     perror("Read");
-    break;
+    return;
   }
   processed_data->angle_now = (uint16_t)(raw->data[0] << 8 | raw->data[1]);
   processed_data->rpm_now = (uint16_t)(raw->data[2] << 8 | raw->data[3]);
@@ -114,7 +114,7 @@ int canTx(int16_t Current_sent, int s)
   return nbytes;
 }
 
-void commandCallback(const car_control_msg &msg, int s)
+void commandCallback(const Motor_Control_Info &msg, int s)
 {
   canRx(&rxframe, &Motor_info, s);
   int16_t Current_sent = speedPID(target_rpm, &Motor_info);
@@ -127,8 +127,7 @@ int main(int argc, char **argv)
 
   ros::init(argc,argv,"MotorServoController");
   ros::NodeHandle n;
-  ros::Suscriber sub = n.subscribe("actuator_info", 10, 
-                        boost::bind(commandCallback,_1,s));
+  ros::Subscriber sub = n.subscribe("actuator_info", 10, boost::bind(commandCallback,_1,s));
 
   ros::Rate r(1000);
   while (ros::ok())

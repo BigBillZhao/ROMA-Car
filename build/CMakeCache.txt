@@ -456,6 +456,12 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //Value Computed by CMake
+motor_test_BINARY_DIR:STATIC=/home/romacar/catkin_ws/build/motor_test
+
+//Value Computed by CMake
+motor_test_SOURCE_DIR:STATIC=/home/romacar/catkin_ws/src/motor_test
+
+//Value Computed by CMake
 my_dynamixel_tutorial_BINARY_DIR:STATIC=/home/romacar/catkin_ws/build/my_dynamixel_tutorial
 
 //Value Computed by CMake
@@ -613,7 +619,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

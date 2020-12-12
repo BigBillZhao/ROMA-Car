@@ -1,0 +1,8 @@
+prefix=/home/romacar/catkin_ws/install
+
+Name: motor_test
+Description: Description of motor_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

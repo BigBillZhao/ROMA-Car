@@ -922,6 +922,19 @@ dynamixel_workbench_toolbox/fast:
 .PHONY : dynamixel_workbench_toolbox/fast
 
 #=============================================================================
+# Target rules for targets named motor_test
+
+# Build rule for target.
+motor_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_test
+.PHONY : motor_test
+
+# fast build rule for target.
+motor_test/fast:
+	$(MAKE) -f motor_test/CMakeFiles/motor_test.dir/build.make motor_test/CMakeFiles/motor_test.dir/build
+.PHONY : motor_test/fast
+
+#=============================================================================
 # Target rules for targets named sync_read_write
 
 # Build rule for target.
@@ -1317,6 +1330,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... dynamixel_workbench_toolbox"
+	@echo "... motor_test"
 	@echo "... sync_read_write"
 	@echo "... find_dynamixel"
 	@echo "... geometry_msgs_generate_messages_lisp"

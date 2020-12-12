@@ -119,6 +119,14 @@
 /home/romacar/catkin_ws/build/dynamixel_workbench_toolbox/CMakeFiles/rebuild_cache.dir
 /home/romacar/catkin_ws/build/dynamixel_workbench_toolbox/CMakeFiles/edit_cache.dir
 /home/romacar/catkin_ws/build/dynamixel_workbench_toolbox/CMakeFiles/install.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/install/strip.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/install/local.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/test.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/list_install_components.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/motor_test.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/edit_cache.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/rebuild_cache.dir
+/home/romacar/catkin_ws/build/motor_test/CMakeFiles/install.dir
 /home/romacar/catkin_ws/build/servo_test/CMakeFiles/install/strip.dir
 /home/romacar/catkin_ws/build/servo_test/CMakeFiles/install/local.dir
 /home/romacar/catkin_ws/build/servo_test/CMakeFiles/test.dir

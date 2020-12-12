@@ -1,0 +1,8 @@
+prefix=/home/romacar/catkin_ws/devel
+
+Name: chasses
+Description: Description of chasses
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
