@@ -47,7 +47,7 @@ Parameters below is for XC-430-W240
 #define Kp_T 1.50
 #define Ki_T 0.40
 #define Kd_T 0.10
-#define RpmIntegralSaturation 600 // highly influence the wave
+#define RpmIntegralSaturation 1600 // highly influence the wave
 
 #define CAN1 0x200
 #define CAN2 0x1FF
@@ -215,12 +215,12 @@ int main(int argc, char **argv)
   {
     printf("%s\n", packetHandler->getRxPacketError(dxl_error));
   }
-  /* set up can network in ubuntu */   
+  /* set up can network in ubuntu    
   const char* set_bitrate = "sudo ip link set can0 type can bitrate 1000000";
   const char* set_up = "sudo ip link set up can0";
   if(system(set_bitrate)||system(set_up))
     printf("set up network fail");
-
+*/
   /* open the socket */
   if ((s = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0)
   {
@@ -265,7 +265,9 @@ int main(int argc, char **argv)
   }
   portHandler->closePort();
 
+/*
   const char* set_down = "sudo ip link set down can0";
   system(set_down);
+  */
   return 0;
 }

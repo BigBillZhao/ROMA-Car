@@ -138,12 +138,12 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg)
 int main(int argc, char **argv)
 {
 
-  /* set up can network in ubuntu */   
+  /* set up can network in ubuntu   
   const char* set_bitrate = "sudo ip link set can0 type can bitrate 1000000";
   const char* set_up = "sudo ip link set up can0";
   if(system(set_bitrate)||system(set_up))
     printf("set up network fail");
-
+*/ 
   /* open the socket */
   if ((s = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0)
   {
@@ -180,8 +180,9 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
   ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
   ros::spin();
-
+/*
   const char* set_down = "sudo ip link set down can0";
   system(set_down);
+  */
   return 0;
 }
